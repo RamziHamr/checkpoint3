@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Hotels Tunisia </title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+
+      <img src="laicoHammamet.jpg" style="width:100%">
+      <div class="text">Hotel Laico Hammamet 5*</div>
+    </div>
+
+    <div class="mySlides fade">
+
+      <img src="LTIBellevuePark.jpg" style="width:100%">
+      <div class="text">LTI Belle Vue Park Sousse 5*</div>
+    </div>
+
+    <div class="mySlides fade">
+
+      <img src="MarhabaPalace.jpg" style="width:100%">
+      <div class="text">Marhaba Palace Monastir 5*</div>
+    </div>
+
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+  <form class="hotels">
+    <select size="1" name="links" onchange="window.location.href=this.value;">
+      <option value="https://fr-fr.facebook.com/laico.hotels.hammamet/">Laico</option>
+      <option value="http://www.yahoo.com">LTI</option>
+      <option value="http://www.yahoo.com">Marhaba</option>
+      </select>
+  </form>
+  <div id="BookingPrice">
+    <p>Booking Total Price </p>
+    <div><span id="Price">450</span>TTC</div>
+  </div>
+
+  <div class="Hotel1">
+<div>
+    
+    <button type="button" class="fas fa-times" id="delete1" aria-hidden="true"> </button>
+
+    <i class="far fa-heart" id="like1"></i>
+  </div>
+    <img class="laicoHammamet" src="laicoHammamet.jpg" alt="laicoHammamet">
+
+    <p> <b> Hotel Laico Hammamet 5* </b> </p>
+    <div>
+    <i class="fas fa-minus-circle" id="minus" ></i>
+    <span id="count1">1</span>
+    <i class="fas fa-plus-circle" id="plus"></i>
+  </div>
+  <div><span id="price1">450</span>TND</div>
+  
+  </div>
+
+  <br>
+
+  <img class="LTIBellevuePark" src="LTIBellevuePark.jpg" alt="LTIBellevuePark">
+
+
+</body>
+
+<script src="hotels.js"> </script>
+
+</html>
